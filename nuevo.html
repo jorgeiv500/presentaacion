@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.4/dist/countUp.min.js"></script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .accordion-content.active {
+            max-height: 1000px; /* Arbitrary high value to ensure content shows */
+            transition: max-height 0.5s ease-in;
+        }
+        .accordion:after {
+            content: '\002B';
+            font-size: 1.5rem;
+            float: right;
+        }
+        .accordion.active:after {
+            content: '\2212';
+        }
+    </style>
+</head>
+<body>
+    <!-- Access Anywhere Section -->
+    <section id="hero">
+        <div class="section-container my-0 text-4xl">
+            <h1>Área de Industrias y tecnologías Digitales</h1>
+            <p class="section-content mb-0 text-2xl">
+                Facultad de Ciencias Naturales e Ingenieria 
+            </p>
+        </div>
+    </section>
+
+    <div class="container mx-auto">
+       
+
+        <!-- Acordeón Section -->
+        <section id="accordion" class="my-10">
+            <div class="section-container mx-auto my-2 p-6">
+                <div class="space-y-0">
+                    <!-- Profesores Section -->
+                    <button class="accordion w-full p-4 bg-blue-600 text-white text-left focus:outline-none">
+                        Profesores
+                    </button>
+                    <div class="accordion-content bg-white p-1 my-0">
+                        <section id="professors" class="my-10">
+                            <div class="section-container">
+                                <h2 class="text-3xl font-bold text-center mb-8">Profesores</h2>
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    <!-- Profesores Cards -->
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/D4E03AQHtJCBjK7ydNQ/profile-displayphoto-shrink_800_800/0/1677538926057?e=1727913600&v=beta&t=VQeFAaZHiAJUBLbba32BXTsniWkJBJbpQyYx6iXUIjk" alt="Jorge Iván Romero" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">Jorge Iván Romero</h3>
+                                        <p class="text-gray-600">Director del Área</p>
+                                        <p class="text-gray-600">Ingeniero Industrial, Maestría en Ingeniería, Doctorado en Ingeniería.</p>
+                                        <p class="text-gray-600">jorgei.romerog@utadeo.edu.co</p>
+                                    </div>
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/D4E03AQG1Zh2bAgydnQ/profile-displayphoto-shrink_800_800/0/1703265968862?e=1727913600&v=beta&t=ENNhHdABEG6uxNeIwyxcR6DVEmKNj8cqAB6AWW5QEAQ" alt="Andrés Julián Aristizabal Cardona" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">Andrés Julián Aristizabal Cardona</h3>
+                                        <p class="text-gray-600">Profesor Titular</p>
+                                        <p class="text-gray-600">Ingeniero Electricista, Ph.D en Ciencias-Física.</p>
+                                        <p class="text-gray-600">andresj.aristizabalc@utadeo.edu.co</p>
+                                    </div>
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/C5603AQGIhYQHVg3h9g/profile-displayphoto-shrink_800_800/0/1601918039303?e=1727913600&v=beta&t=bcgSoUDKASffvNWQOnkBToanRUX4085jSrnAeKN7b9A" alt="Edgar José Ruiz Dorantes" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">Edgar José Ruiz Dorantes</h3>
+                                        <p class="text-gray-600">Profesor Asociado</p>
+                                        <p class="text-gray-600">Maestro en Tecnología Educativa, Esp. en Sistemas de Información Gerencial y en Alta Gerencia, Esp. en Administración de Empresas.</p>
+                                        <p class="text-gray-600">edgar.ruiz@utadeo.edu.co</p>
+                                    </div>
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/C4E03AQEZcaFKjEH3oQ/profile-displayphoto-shrink_800_800/0/1516468760666?e=1727913600&v=beta&t=NI-_W7181e5w6SUcs2cvD5E3_papgO8LdKhhQFbRZHc" alt="Eliasib Naher Rivera Aya" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">Eliasib Naher Rivera Aya</h3>
+                                        <p class="text-gray-600">Profesor Asociado</p>
+                                        <p class="text-gray-600">Administrador de Empresas, Ingeniero Industrial, Especialista en Docencia Universitaria, MSc. en Educación y MSc. en Administración.</p>
+                                        <p class="text-gray-600">eliasib.rivera@utadeo.edu.co</p>
+                                    </div>
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/C4E03AQEUL6j6GFUQNQ/profile-displayphoto-shrink_800_800/0/1634520968519?e=1727913600&v=beta&t=z8srPlgGx_xAQRTRE3CaWbxVKsKmaelreomV9svd_uM" alt="Ixent Galpin" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">Ixent Galpin</h3>
+                                        <p class="text-gray-600">Profesor Titular</p>
+                                        <p class="text-gray-600">PhD en Ciencias de la Computación (Universidad de Manchester), MSc en Ciencias de la Computación Avanzadas (Universidad de Manchester).</p>
+                                        <p class="text-gray-600">ixent@utadeo.edu.co</p>
+                                    </div>
+                                    <div class="bg-white shadow-md rounded-lg p-4 text-center">
+                                        <img src="https://media.licdn.com/dms/image/C4D03AQE6YbGmibeS7Q/profile-displayphoto-shrink_800_800/0/1526703308151?e=1727913600&v=beta&t=M-QTotX1dAgV1GK67mRcoE6BVRQVdy-J0bPGwVqq3N0" alt="José Alejandro Franco" class="h-32 w-32 rounded-full mx-auto mb-4">
+                                        <h3 class="text-xl font-semibold">José Alejandro Franco</h3>
+                                        <p class="text-gray-600">Profesor Asociado</p>
+                                        <p class="text-gray-600">Ingeniero Electrónico con Maestría en Ingeniería Electrónica.</p>
+                                        <p class="text-gray-600">josea.francoc@utadeo.edu.co</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Grupo EADE Section -->
+                    <button class="accordion w-full p-4 bg-green-600 text-white text-left focus:outline-none">
+                        Grupo de Investigación en Energía, Ambiente y Desarrollo (EADE)
+                    </button>
+                    <div class="accordion-content bg-white p-1">
+                        <section id="eade" class="mb-12">
+                            <h2 class="text-2xl font-bold text-center mb-6">Grupo de Investigación en Energía, Ambiente y Desarrollo (EADE)</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                                <!-- Publicaciones Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-blue-600 text-4xl mr-4">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Publicaciones Totales</h2>
+                                        <p class="text-gray-600">Número de publicaciones:</p>
+                                        <p id="eade-publicaciones" class="text-4xl font-bold text-blue-600" data-target="109">109</p>
+                                    </div>
+                                </div>
+
+                                <!-- Proyectos de Investigación Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-green-600 text-4xl mr-4">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Proyectos de Investigación</h2>
+                                        <p class="text-gray-600">Número de proyectos:</p>
+                                        <p id="eade-proyectos" class="text-4xl font-bold text-green-600" data-target="13">13</p>
+                                    </div>
+                                </div>
+
+                                <!-- Tesis y Trabajos Dirigidos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-purple-600 text-4xl mr-4">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Tesis y Trabajos Dirigidos</h2>
+                                        <p class="text-gray-600">Número de trabajos dirigidos:</p>
+                                        <p id="eade-tesis" class="text-4xl font-bold text-purple-600" data-target="66">66</p>
+                                    </div>
+                                </div>
+
+                                <!-- Participaciones en Eventos Científicos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-red-600 text-4xl mr-4">
+                                        <i class="fas fa-microscope"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Eventos Científicos</h2>
+                                        <p class="text-gray-600">Número de participaciones:</p>
+                                        <p id="eade-eventos" class="text-4xl font-bold text-red-600" data-target="28">28</p>
+                                    </div>
+                                </div>
+
+                                <!-- Actividades de Evaluación Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-yellow-600 text-4xl mr-4">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Actividades de Evaluación</h2>
+                                        <p class="text-gray-600">Número de evaluaciones:</p>
+                                        <p id="eade-evaluaciones" class="text-4xl font-bold text-yellow-600" data-target="14">14</p>
+                                    </div>
+                                </div>
+
+                                <!-- Productos Técnicos y Tecnológicos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-indigo-600 text-4xl mr-4">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Productos Técnicos y Tecnológicos</h2>
+                                        <p class="text-gray-600">Número de productos:</p>
+                                        <p id="eade-productos" class="text-4xl font-bold text-indigo-600" data-target="9">9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Grupo ID&SI Section -->
+                    <button class="accordion w-full p-4 bg-red-600 text-white text-left focus:outline-none">
+                        Grupo de Investigación en Ingeniería de Datos y Sistemas Inteligentes (ID&SI)
+                    </button>
+                    <div class="accordion-content bg-white p-1">
+                        <section id="idsi" class="mb-12">
+                            <h2 class="text-2xl font-bold text-center mb-6">Grupo de Investigación en Ingeniería de Datos y Sistemas Inteligentes (ID&SI)</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                                <!-- Publicaciones Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-blue-600 text-4xl mr-4">
+                                        <i class="fas fa-book"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Publicaciones Totales</h2>
+                                        <p class="text-gray-600">Número de publicaciones:</p>
+                                        <p id="idsi-publicaciones" class="text-4xl font-bold text-blue-600" data-target="85">85</p>
+                                    </div>
+                                </div>
+
+                                <!-- Proyectos de Investigación Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-green-600 text-4xl mr-4">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Proyectos de Investigación</h2>
+                                        <p class="text-gray-600">Número de proyectos:</p>
+                                        <p id="idsi-proyectos" class="text-4xl font-bold text-green-600" data-target="45">45</p>
+                                    </div>
+                                </div>
+
+                                <!-- Tesis y Trabajos Dirigidos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-purple-600 text-4xl mr-4">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Tesis y Trabajos Dirigidos</h2>
+                                        <p class="text-gray-600">Número de trabajos dirigidos:</p>
+                                        <p id="idsi-tesis" class="text-4xl font-bold text-purple-600" data-target="23">23</p>
+                                    </div>
+                                </div>
+
+                                <!-- Participaciones en Eventos Científicos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-red-600 text-4xl mr-4">
+                                        <i class="fas fa-microscope"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Eventos Científicos</h2>
+                                        <p class="text-gray-600">Número de participaciones:</p>
+                                        <p id="idsi-eventos" class="text-4xl font-bold text-red-600" data-target="38">38</p>
+                                    </div>
+                                </div>
+
+                                <!-- Actividades de Evaluación Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-yellow-600 text-4xl mr-4">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Actividades de Evaluación</h2>
+                                        <p class="text-gray-600">Número de evaluaciones:</p>
+                                        <p id="idsi-evaluaciones" class="text-4xl font-bold text-yellow-600" data-target="27">27</p>
+                                    </div>
+                                </div>
+
+                                <!-- Productos Técnicos y Tecnológicos Totales -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-indigo-600 text-4xl mr-4">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Productos Técnicos y Tecnológicos</h2>
+                                        <p class="text-gray-600">Número de productos:</p>
+                                        <p id="idsi-productos" class="text-4xl font-bold text-indigo-600" data-target="15">15</p>
+                                    </div>
+                                </div>
+
+                                <!-- Software Desarrollado -->
+                                <div class="bg-white shadow-md rounded-lg p-4 flex items-center">
+                                    <div class="text-pink-600 text-4xl mr-4">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-2xl font-semibold text-gray-800">Software Desarrollado</h2>
+                                        <p class="text-gray-600">Número de software:</p>
+                                        <p id="idsi-software" class="text-4xl font-bold text-pink-600" data-target="8">8</p>
+                                    </div>
+                                </div>
+
+                                <!-- Entidades y Empresas Asociadas -->
+                               
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordions = document.querySelectorAll('.accordion');
+            accordions.forEach(accordion => {
+                accordion.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                    this.classList.toggle('active');
+
+                    // Count up animation
+                    const counters = content.querySelectorAll('.text-4xl.font-bold');
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        const countUp = new CountUp(counter, target);
+                        if (!countUp.error) {
+                            countUp.start();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
